@@ -5,7 +5,7 @@ import { createJSONStorage, persist } from "zustand/middleware";
 import { MenuItem, RestaurantState } from "@/types/restaurantTypes";
 import { Orders } from "@/types/orderTypes";
 
-const API_END_POINT = "http://localhost:9000/api/v1/restaurant";
+const API_END_POINT = "https://foodizapp.onrender.com/api/v1/restaurant";
 axios.defaults.withCredentials = true;
 
 export const useRestaurantStore = create<RestaurantState>()(

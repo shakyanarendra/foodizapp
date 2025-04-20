@@ -27,7 +27,7 @@ app.use(cookieParser());
 
 // CORS Configuration
 const corsOptions = {
-  origin: process.env.FRONTEND_URL || "http://localhost:5173",
+  origin: process.env.FRONTEND_URL || "https://foodizapp.onrender.com/",
   credentials: true,
 };
 app.use(cors(corsOptions));

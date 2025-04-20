@@ -4,7 +4,7 @@ import axios from "axios";
 import { createJSONStorage, persist } from "zustand/middleware";
 import { toast } from "sonner";
 
-const API_END_POINT = "http://localhost:9000/api/v1/user";
+const API_END_POINT = "https://foodizapp.onrender.com/api/v1/user";
 axios.defaults.withCredentials = true;
 
 type User = {
