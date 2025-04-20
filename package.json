@@ -6,7 +6,7 @@
     "dev": "nodemon backend/index.ts",
     "stripe": "stripe listen --forward-to localhost:9000/api/v1/order/webhook",
     "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
-    "start": "ts-node --max-old-space-size=512 backend/index.ts"
+    "start": "nodemon backend/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -33,9 +33,9 @@
     "@types/express": "^5.0.0",
     "@types/jsonwebtoken": "^9.0.7",
     "@types/multer": "^1.4.12",
-    "@types/node": "^22.14.1",
+    "@types/node": "^22.10.2",
     "nodemon": "^3.1.9",
     "ts-node": "^10.9.2",
-    "typescript": "^5.8.3"
+    "typescript": "^5.7.2"
   }
 }
