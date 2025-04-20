@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon --watch backend --ext ts --exec ts-node backend/index.ts",
-    "start": "ts-node backend/index.ts",
+   "start": "ts-node index.ts",
     "stripe": "stripe listen --forward-to localhost:9000/api/v1/order/webhook",
     "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
   },
